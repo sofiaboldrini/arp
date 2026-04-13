@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARP — arquitetura e política</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --serif: 'EB Garamond', Georgia, serif;
+      --text: #1a1a1a;
+      --muted: #555;
+      --link: #1a1a1a;
+      --border: #ccc;
+      --bg: #ffffff;
+    }
+
+    body {
+      font-family: var(--serif);
+      font-size: 18px;
+      line-height: 1.75;
+      color: var(--text);
+      background: var(--bg);
+      padding: 0;
+      margin: 0;
+    }
+
+    /* ── LAYOUT ── */
+    .site-wrapper {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    /* ── HEADER ── */
+    .site-header {
+      margin-bottom: 2.5rem;
+    }
+
+    .site-logo {
+      display: block;
+      margin-bottom: 1.5rem;
+      text-decoration: none;
+    }
+
+    .site-logo img {
+      max-height: 80px;
+      width: auto;
+    }
+
+    /* fallback text logo (usar até ter a imagem) */
+    .logo-text {
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .logo-text .logo-abbr {
+      display: block;
+      font-family: var(--serif);
+      font-size: 2.6rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      color: var(--text);
+      line-height: 1;
+    }
+
+    .logo-text .logo-full {
+      display: block;
+      font-family: var(--serif);
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: 0.2rem;
+    }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.15rem 1.4rem;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 0.6rem 0;
+      margin-bottom: 3rem;
+    }
+
+    nav a {
+      font-family: var(--serif);
+      font-size: 1rem;
+      color: var(--link);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* ── CONTENT ── */
+    .site-content p {
+      margin-bottom: 1.4em;
+      hyphens: auto;
+    }
+
+    /* ── FOOTER ── */
+    .site-footer {
+      margin-top: 4rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1.2rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .site-footer a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .site-footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── INNER PAGES ── */
+    .page-title {
+      font-size: 1rem;
+      font-weight: 400;
+      font-style: italic;
+      margin-bottom: 2rem;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.6rem;
+    }
+
+    .membros-grid {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .membro h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 0.3em;
+    }
+
+    .membro p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .publicacoes-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .publicacoes-list li {
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 0;
+      font-size: 0.95rem;
+    }
+
+    .publicacoes-list li:first-child {
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .site-wrapper { padding: 2rem 1.25rem 4rem; }
+      .logo-text .logo-abbr { font-size: 2rem; }
+      body { font-size: 17px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="site-wrapper">
+
+    <header class="site-header">
+      <a href="index.html" class="site-logo">
+        <img src="logo-arp.png" alt="ARP — grupo história da arquitetura e política" />
+      </a>
+    </header>
+
+    <nav>
+      <a href="index.html">sobre</a>
+      <a href="publicacoes.html">publicações</a>
+      <a href="membros.html">membros</a>
+    </nav>
+
+    <main class="site-content" id="content">
+
+      <p>coletivo de pesquisa e intervenção em arquitetura formado em 2018, dedicado a investigar as relações entre prática projetual, disputas territoriais e processos políticos no brasil contemporâneo.</p>
+
+      <p>partimos da premissa de que o espaço construído não é neutro — que cada escolha técnica, cada programa, cada forma de habitação carrega em si uma concepção de mundo, uma distribuição de poder, uma aposta sobre quem pertence a que lugares. o projeto arquitetônico, nessa perspectiva, é sempre também um projeto político.</p>
+
+      <p>trabalhamos na interseção entre pesquisa histórica, crítica espacial e engajamento com comunidades e movimentos sociais. nossos temas incluem habitação popular, infraestruturas, patrimônio em disputa, arquiteturas indígenas e quilombolas, e os imaginários técnicos que sustentam grandes projetos de desenvolvimento.</p>
+
+      <p>desenvolvemos atividades de formação, publicações, intervenções públicas e parcerias com organizações que atuam diretamente na produção do espaço urbano e territorial.</p>
+
+      <p>o coletivo é aberto a estudantes, pesquisadores e profissionais comprometidos com uma arquitetura que se reconhece como prática inscrita em relações de força — e que assume essa inscrição como condição de possibilidade, não como obstáculo.</p>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>ARP — arquitetura e política &nbsp;|&nbsp; <a href="mailto:contato@arp.com.br">contato@arp.com.br</a></p>
+    </footer>
+
+  </div>
+</body>
+</html>

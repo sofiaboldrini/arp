@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>publicações — ARP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --serif: 'EB Garamond', Georgia, serif; --text: #1a1a1a; --muted: #555; --link: #1a1a1a; --border: #ccc; --bg: #ffffff; }
+    body { font-family: var(--serif); font-size: 18px; line-height: 1.75; color: var(--text); background: var(--bg); }
+    .site-wrapper { max-width: 760px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+    .site-header { margin-bottom: 2.5rem; }
+    .logo-text { display: inline-block; text-decoration: none; }
+    .logo-text .logo-abbr { display: block; font-size: 2.6rem; font-weight: 500; letter-spacing: 0.12em; color: var(--text); line-height: 1; }
+    .logo-text .logo-full { display: block; font-size: 0.95rem; letter-spacing: 0.08em; color: var(--muted); font-style: italic; margin-top: 0.2rem; }
+    nav { display: flex; flex-wrap: wrap; gap: 0.15rem 1.4rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 0.6rem 0; margin-bottom: 3rem; }
+    nav a { font-size: 1rem; color: var(--link); text-decoration: none; }
+    nav a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .page-title { font-size: 1rem; font-weight: 400; font-style: italic; margin-bottom: 2.5rem; color: var(--muted); border-bottom: 1px solid var(--border); padding-bottom: 0.6rem; }
+    .pub-list { list-style: none; padding: 0; }
+    .pub-list li { border-bottom: 1px solid var(--border); padding: 1.1rem 0; }
+    .pub-list li:first-child { border-top: 1px solid var(--border); }
+    .pub-list .pub-titulo { display: block; font-size: 1rem; }
+    .pub-list .pub-meta { display: block; font-size: 0.88rem; color: var(--muted); font-style: italic; margin-top: 0.15em; }
+    .pub-list a { color: var(--link); text-decoration: none; }
+    .pub-list a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .site-footer { margin-top: 4rem; border-top: 1px solid var(--border); padding-top: 1.2rem; font-size: 0.82rem; color: var(--muted); font-style: italic; }
+    .site-footer a { color: var(--muted); text-decoration: none; }
+    @media (max-width: 600px) { .site-wrapper { padding: 2rem 1.25rem 4rem; } }
+  </style>
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="site-header">
+      <a href="index.html" class="site-logo">
+        <img src="logo-arp.png" alt="ARP — grupo história da arquitetura e política" />
+      </a>
+    </header>
+    <nav>
+      <a href="index.html">sobre</a>
+      <a href="publicacoes.html">publicações</a>
+      <a href="membros.html">membros</a>
+    </nav>
+    <main id="content">
+      <p class="page-title">publicações</p>
+      <ul class="pub-list">
+        <!-- adicione entradas no padrão abaixo -->
+        <li>
+          <span class="pub-titulo">título do artigo ou texto</span>
+          <span class="pub-meta">autor(a) — publicação, ano</span>
+        </li>
+        <li>
+          <span class="pub-titulo"><a href="#">título com link para download ou leitura</a></span>
+          <span class="pub-meta">autor(a) — publicação, ano</span>
+        </li>
+      </ul>
+    </main>
+    <footer class="site-footer">
+      <p>ARP — arquitetura e política &nbsp;|&nbsp; <a href="mailto:contato@arp.com.br">contato@arp.com.br</a></p>
+    </footer>
+  </div>
+</body>
+</html>
